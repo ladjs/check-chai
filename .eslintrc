@@ -2,35 +2,9 @@
   // Fork: https://gist.github.com/niftylettuce/c61383e0bd92129faf11
   // Source: http://eslint.org/docs/rules/
 
-  "ecmaFeatures": {
-    "arrowFunctions": false,                    // enable arrow functions
-    "binaryLiterals": false,                    // enable binary literals
-    "blockBindings": false,                     // enable let and const (aka block bindings)
-    "classes": false,                           // enable classes
-    "defaultParams": false,                     // enable default function parameters
-    "destructuring": false,                     // enable destructuring
-    "forOf": false,                             // enable for-of loops
-    "generators": false,                        // enable generators
-    "modules": true,                            // enable modules and global strict mode
-    "objectLiteralComputedProperties": false,   // enable computed object literal property names
-    "objectLiteralDuplicateProperties": false,  // enable duplicate object literal properties in strict mode
-    "objectLiteralShorthandMethods": false,     // enable object literal shorthand methods
-    "objectLiteralShorthandProperties": false,  // enable object literal shorthand properties
-    "octalLiterals": false,                     // enable octal literals
-    "regexUFlag": false,                        // enable the regular expression u flag
-    "regexYFlag": false,                        // enable the regular expression y flag
-    "restParams": false,                        // enable the rest parameters
-    "spread": false,                            // enable the spread operator
-    "superInFunctions": false,                  // enable super references inside of functions
-    "templateStrings": false,                   // enable template strings
-    "unicodeCodePointEscapes": false,           // enable code point escapes
-    "globalReturn": false,                      // allow return statements in the global scope
-    "jsx": true                                 // enable JSX
-  },
-
   "env": {
-    "es6": true,          // ecmascript 6
-    "browser": true,      // browser global variables
+    "es6": false,          // ecmascript 6
+    "browser": false,      // browser global variables
     "node": true,         // Node.js global variables and Node.js-specific rules
     "amd": false,         // defines require() and define() as global variables as per the amd spec
     "mocha": true,        // adds all of the Mocha testing global variables
@@ -41,16 +15,12 @@
     "shelljs": false,     // shelljs global variables
   },
 
-  "parser": "babel-eslint",
-
   "globals": {
     // e.g. "angular": true
-    expect: true
   },
 
   "plugins": [
     // e.g. "react" (must run `npm install eslint-plugin-react` first)
-    "react"
   ],
 
   "rules": {
@@ -244,24 +214,7 @@
     "max-params": 0,       // limits the number of parameters that can be used in the function declaration. (off by default)
     "max-statements": 0,   // specify the maximum number of statement allowed in a function (off by default)
     "no-bitwise": 0,       // disallow use of bitwise operators (off by default)
-    "no-plusplus": 0,      // disallow use of unary operators, ++ and -- (off by default)
-
-    ////////// React //////////
-    "jsx-quotes": 2,
-    "react/display-name": 0,
-    "react/jsx-boolean-value": 2,
-    "react/jsx-no-undef": 2,
-    "react/jsx-sort-props": 0,
-    "react/jsx-uses-react": 2,
-    "react/jsx-uses-vars": 2,
-    "react/no-did-mount-set-state": 2,
-    "react/no-did-update-set-state": 2,
-    "react/no-multi-comp": 0,
-    "react/no-unknown-property": 2,
-    "react/prop-types": 2,
-    "react/react-in-jsx-scope": 2,
-    "react/self-closing-comp": 2,
-    "react/wrap-multilines": 2
+    "no-plusplus": 0      // disallow use of unary operators, ++ and -- (off by default)
 
   }
 
