@@ -17,10 +17,8 @@ npm install --save check-chai
 
 ```js
 var chai = require('chai');
-var dirtyChai = require('dirty-chai');
 var checkChai = require('check-chai');
 var expect = chai.expect;
-chai.use(dirtyChai);
 chai.use(checkChai);
 
 describe('test', function() {
